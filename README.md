@@ -47,7 +47,7 @@ The DUT writes registers and drives `PSLVERR` in the ACCESS phase (`PSEL && PENA
 ```
                     +-------------------- apb_env --------------------+
   tests/sequences   |  +------------- apb_agent -------------+         |
-  ---------------->  |  | sequencer -> driver --(apb_if)--+   |         |
+  ----------------> |  | sequencer -> driver --(apb_if)--+   |         |
                     |  |                monitor <--(apb_if)-+|         |
                     |  +-----------------|-------------------+         |
                     |                    | analysis port               |
